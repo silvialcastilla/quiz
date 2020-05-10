@@ -1,0 +1,119 @@
+:root {
+    --color-principal: white;
+    --color-secondary: #d8bbff;
+    --color-third: #c77dff;
+    --color-fourth: #5a189a;
+    --color-fifth: #0E1428;
+}
+
+* {
+    font-family: 'Pacifico', cursive;
+    background-color: var(--color-secondary);
+    color: var(--color-principal);
+    margin: 0;
+    padding: 0;
+}
+
+.index-align {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 65px;
+    padding-top: 50%;
+    padding-bottom: 30%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
+}
+
+.enlace {
+    border: 1px solid var(--color-fifth);
+    background-color: black;
+    border-radius: 5px;
+    align-self: center;
+    order: 1;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.quiz_title {
+    text-align: center;
+    font-size: 65px;
+    padding-top: 70%;
+    padding-bottom: 70%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
+}
+
+.box-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    padding-bottom: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box-flex-flexing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin: 4%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 70%;
+    background-color: var(--color-third);
+    font-size: 20px;
+}
+
+.form_question {
+    padding-top: 40%;
+    padding-bottom: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (min-width: 768px) {
+    .box-flex-flexing {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .quiz_title {
+        text-align: center;
+        font-size: 70px;
+        border: 2px solid black;
+        padding-top: 35%;
+        padding-bottom: 43%;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
+    }
+    .legend {
+        font-size: 40px;
+    }
+    .label {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .quiz_title {
+        text-align: center;
+        font-size: 80px;
+        border: 2px solid black;
+        padding-top: 24%;
+        padding-bottom: 28%;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
+    }
+    .legend {
+        font-size: 100px;
+    }
+    .label {}
+}
