@@ -74,6 +74,7 @@ document.querySelector('form[name="mrrobots"]').addEventListener('submit', (even
     }
     for (let i = 0; i < event.target.elements.mrrobot.length; i++) {
         document.getElementById(respuestas.mrrobot).style.backgroundColor = "green"
+        console.log(document.getElementById(respuestas.mrrobot))
     }
     if (event.target.elements.mrrobot.value == respuestas.mrrobot) {
         alert("¡Has acertado!");
