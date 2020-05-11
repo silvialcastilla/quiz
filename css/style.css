@@ -17,31 +17,32 @@
 .index-align {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-content: center;
 }
 
 .title {
     text-align: center;
     font-size: 65px;
-    padding-top: 50%;
-    padding-bottom: 30%;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
 }
 
 .enlace {
-    border: 1px solid var(--color-fifth);
-    background-color: black;
+    text-decoration: none;
     border-radius: 5px;
+    color: #5a189a;
+    padding: 5%;
     align-self: center;
-    order: 1;
-    flex: 0 1 auto;
-    align-self: center;
+    border: 2px solid #5a189a;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 .quiz_title {
     text-align: center;
     font-size: 65px;
-    padding-top: 70%;
-    padding-bottom: 70%;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
 }
 
@@ -52,9 +53,9 @@
 }
 
 legend {
-    padding-bottom: 20%;
     font-size: 30px;
     text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
 }
 
 .box-flex-flexing {
@@ -62,6 +63,7 @@ legend {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
 }
 
 label {
@@ -74,11 +76,41 @@ label {
     font-size: 20px;
 }
 
-.form_question {
-    padding-top: 40%;
-    padding-bottom: 40%;
-    padding-left: 5%;
-    padding-right: 5%;
+.respuesta1:hover {
+    background-color: var(--color-fourth);
+}
+
+.respuesta2:hover {
+    background-color: var(--color-fourth);
+}
+
+.respuesta3:hover {
+    background-color: var(--color-fourth);
+}
+
+.respuesta4:hover {
+    background-color: var(--color-fourth);
+}
+
+.respuesta5:hover {
+    background-color: var(--color-fourth);
+}
+
+.button {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #5a189a;
+    padding: 2%;
+    width: 70%;
+    align-self: center;
+    border: 2px solid #5a189a;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: #6fffe9
 }
 
 @media (min-width: 768px) {
@@ -90,9 +122,6 @@ label {
     .quiz_title {
         text-align: center;
         font-size: 70px;
-        border: 2px solid black;
-        padding-top: 35%;
-        padding-bottom: 43%;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
     }
     .legend {
@@ -107,13 +136,9 @@ label {
     .quiz_title {
         text-align: center;
         font-size: 80px;
-        border: 2px solid black;
-        padding-top: 24%;
-        padding-bottom: 28%;
         text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px black, 1px 1px 0 black;
     }
     .legend {
         font-size: 100px;
     }
-    .label {}
 }

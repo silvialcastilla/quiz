@@ -6,65 +6,78 @@ const respuestas = {
     mrrobot: "eliot"
 }
 
-document.querySelector('form[name="got"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="gots"]').addEventListener('submit', (event) => {
     event.preventDefault();
-
-
+    for (let i = 0; i < document.getElementsByClassName("respuesta1").length; i++) {
+        document.getElementsByClassName("respuesta1")[i].style.backgroundColor = "red"
+    }
+    for (let i = 0; i < event.target.elements.got.length; i++) {
+        document.getElementById(respuestas.got).style.backgroundColor = "green"
+    }
     if (event.target.elements.got.value == respuestas.got) {
-        console.log(event.target.elements.got)
-            //document.querySelector('input#cuervo[type="radio"]').style.backgroundColor = "green"
-        document.getElementById("cuervo").backgroundColor = "green"
-        event.target.got.input.map(cuervo, () => {
-            cuervo.style.backgroundColor = "green"
-        })
-        console.log(event.target.input["id=cuervo"].style.backgroundColor = "green")
+        alert("¡Has acertado!");
     } else {
-
+        alert("¡Te equivocaste!")
     }
-
 })
 
-document.querySelector('form[name="lost"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="losts"]').addEventListener('submit', (event) => {
     event.preventDefault();
-
+    for (let i = 0; i < document.getElementsByClassName("respuesta2").length; i++) {
+        document.getElementsByClassName("respuesta2")[i].style.backgroundColor = "red"
+    }
+    for (let i = 0; i < event.target.elements.lost.length; i++) {
+        document.getElementById(respuestas.lost).style.backgroundColor = "green"
+    }
     if (event.target.elements.lost.value == respuestas.lost) {
-        document.querySelector('input[type="radio"]')
-        console.log(document.querySelector('input[type="radio"]'))
+        alert("¡Has acertado!");
     } else {
-        console.log('red')
+        alert("¡Te equivocaste!")
     }
-
 })
 
 
-document.querySelector('form[name="westworld"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="westworlds"]').addEventListener('submit', (event) => {
     event.preventDefault();
-
+    for (let i = 0; i < document.getElementsByClassName("respuesta3").length; i++) {
+        document.getElementsByClassName("respuesta3")[i].style.backgroundColor = "red"
+    }
+    for (let i = 0; i < event.target.elements.westworld.length; i++) {
+        document.getElementById(respuestas.westworld).style.backgroundColor = "green"
+    }
     if (event.target.elements.westworld.value == respuestas.westworld) {
-        document.querySelector('input[type="radio"]')
-        console.log(document.querySelector('input[type="radio"]'))
+        alert("¡Has acertado!");
     } else {
-        console.log('red')
+        alert("¡Te equivocaste!")
     }
 })
 
-document.querySelector('form[name="gg"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="ggs"]').addEventListener('submit', (event) => {
     event.preventDefault();
+    for (let i = 0; i < document.getElementsByClassName("respuesta4").length; i++) {
+        document.getElementsByClassName("respuesta4")[i].style.backgroundColor = "red"
+    }
+    for (let i = 0; i < event.target.elements.gg.length; i++) {
+        document.getElementById(respuestas.gg).style.backgroundColor = "green"
+    }
     if (event.target.elements.gg.value == respuestas.gg) {
-        document.querySelector('input[type="radio"]')
-        console.log(document.querySelector('input[type="radio"]'))
+        alert("¡Has acertado!");
     } else {
-        console.log('red')
+        alert("¡Te equivocaste!")
     }
 })
 
-document.querySelector('form[name="mrrobt"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="mrrobots"]').addEventListener('submit', (event) => {
     event.preventDefault();
-
+    for (let i = 0; i < document.getElementsByClassName("respuesta5").length; i++) {
+        document.getElementsByClassName("respuesta5")[i].style.backgroundColor = "red"
+    }
+    for (let i = 0; i < event.target.elements.mrrobot.length; i++) {
+        document.getElementById(respuestas.mrrobot).style.backgroundColor = "green"
+    }
     if (event.target.elements.mrrobot.value == respuestas.mrrobot) {
-        document.querySelector('input[type="radio"]')
-        console.log(document.querySelector('input[type="radio"]'))
+        alert("¡Has acertado!");
     } else {
-        console.log('red')
+        alert("¡Te equivocaste!")
     }
 })
